@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Enrique",
+  "version": "1.0",
+  "description": "Press ALT+B to play Enrique for 3 seconds.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["enrique.mp3"],
+      "matches": ["*://www.youtube.com/*"]
+    }
+  ]
+}
